@@ -23,6 +23,7 @@ class Task(models.Model):
 	task_dueDate=models.DateTimeField(blank=True,null=True)
 	task_estimated=models.IntegerField()
 	task_list=models.ForeignKey(List)
+	task_pomodori=models.SmallIntegerField(default=0)
 
 	def __unicode__(self):
 		return self.title
