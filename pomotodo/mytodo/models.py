@@ -24,9 +24,10 @@ class Task(models.Model):
 	task_estimated=models.IntegerField()
 	task_list=models.ForeignKey(List)
 	task_pomodori=models.SmallIntegerField(default=0)
+	task_completed=models.BooleanField(default=False)
 
 	def __unicode__(self):
-		return self.title
+		return self.task_title
 
 
 
