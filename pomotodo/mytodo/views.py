@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from mytodo.models import Project
 
-# Create your views here.
+
+class ListProjectView(ListView):
+	model=Project

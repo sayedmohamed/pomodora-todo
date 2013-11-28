@@ -7,11 +7,11 @@ PRIORITY_LEVEL=(
 	(3,'Hight'),
 	)
 
-class List(models.Model):
-	list_title=models.CharField(max_length=200)
+class Project(models.Model):
+	project_title=models.CharField(max_length=200)
 
 	def __unicode__(self):
-		return self.list_title
+		return self.project_title
 
 
 #tasks defintion
@@ -22,7 +22,7 @@ class Task(models.Model):
 	task_priority=models.IntegerField(choices=PRIORITY_LEVEL,default=2,max_length=1,blank=True)
 	task_dueDate=models.DateTimeField(blank=True,null=True)
 	task_estimated=models.IntegerField()
-	task_list=models.ForeignKey(List)
+	task_list=models.ForeignKey(Project)
 	task_pomodori=models.SmallIntegerField(default=0)
 	task_completed=models.BooleanField(default=False)
 
