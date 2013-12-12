@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 #define the activity inventory list
 PRIORITY_LEVEL=(
@@ -8,26 +9,27 @@ PRIORITY_LEVEL=(
 	)
 
 class Project(models.Model):
-	project_title=models.CharField(max_length=200)
+    project_title=models.CharField(max_length=200)
+    user=models.ForeignKey(User)
 
-	def __unicode__(self):
-		return self.project_title
+    def __unicode__(self):
+        return self.project_title
 
 
 #tasks defintion
 class Task(models.Model):
-	task_title=models.CharField(max_length=200)
-	task_createdAt=models.DateTimeField(auto_now=True)
-	task_description=models.TextField(blank=True,null=True)
-	task_priority=models.IntegerField(choices=PRIORITY_LEVEL,default=2,max_length=1,blank=True)
-	task_dueDate=models.DateTimeField(blank=True,null=True)
-	task_estimated=models.IntegerField()
-	task_list=models.ForeignKey(Project)
-	task_pomodori=models.SmallIntegerField(default=0)
-	task_completed=models.BooleanField(default=False)
+    task_title=models.CharField(max_length=200)
+    task_createdAt=models.DateTimeField(auto_now=True)
+    task_description=models.TextField(blank=True,null=True)
+    task_priority=models.IntegerField(choices=PRIORITY_LEVEL,default=2,max_length=1,blank=True)
+    task_dueDate=models.DateTimeField(blank=True,null=True)
+    task_estimated=models.IntegerField()
+    project=models.ForeignKey(Project)
+    task_pomodori=models.SmallIntegerField(default=0)
+    task_completed=models.BooleanField(default=False)
 
-	def __unicode__(self):
-		return self.task_title
+    def __unicode__(self):
+        return self.task_title
 
 
 
