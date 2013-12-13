@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="059e75b2-56cd-4102-a42c-fd1971ae3f6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mytodo/templates/mytodo/index.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mytodo/migrations/0002_auto__add_field_task_task_completed.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mytodo/templates/mytodo/project_list.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mytodo/urls.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytodo/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/mytodo/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytodo/models.py" afterPath="$PROJECT_DIR$/mytodo/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pomotodo/urls.py" afterPath="$PROJECT_DIR$/pomotodo/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytodo/views.py" afterPath="$PROJECT_DIR$/mytodo/views.py" />
     </list>
     <ignored path="pomotodo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,22 +35,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mytodo/views.py">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pomotodo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="33" selection-start="166" selection-end="166" vertical-scroll-proportion="0.2673611" vertical-offset="0" max-vertical-offset="576">
-              <folding />
+            <state line="12" column="23" selection-start="338" selection-end="347" vertical-scroll-proportion="0.45833334" vertical-offset="0" max-vertical-offset="576">
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pomotodo/urls.py">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytodo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="46" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
+            <state line="8" column="33" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -537,12 +530,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pomotodo/urls.py">
+    <entry file="file://$PROJECT_DIR$/mytodo/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state line="8" column="33" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -553,10 +544,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytodo/views.py">
+    <entry file="file://$PROJECT_DIR$/pomotodo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="166" selection-end="166" vertical-scroll-proportion="0.2673611" vertical-offset="0" max-vertical-offset="576">
-          <folding />
+        <state line="12" column="23" selection-start="338" selection-end="347" vertical-scroll-proportion="0.45833334" vertical-offset="0" max-vertical-offset="576">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
