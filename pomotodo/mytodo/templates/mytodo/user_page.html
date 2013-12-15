@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head %}user {{ username }}{% endblock %}
+
+{% block header %}
+	<h2>{{ username }} projects</h2>
+{% endblock %}
+
+{% block content %}
+	{% if projects %}
+		<ul>
+			{% for project in projects %}	
+				<li>{{ project.project_title }}</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>no projects for {{ username }}</p><br />
+		<a href="">add new prject</a>
+	{% endif %}
+{% endblock %}

@@ -2,9 +2,14 @@
 {% block head %}home page{% endblock %}
 
 {% block header %}
-    <h2> welcome to pomotodo</h2>
 {% endblock %}
 
 {% block content %}
-    <p>user pomotodo to manage time and tasks</p>
+    {% if user.username %}
+    <h2> welcome {{ user.username  }} to pomotodo</h2>
+    <p>use pomotodo to manage time and tasks</p>
+    {% else %}
+      <p>welcome anonymous you have to <a href="/login/">log in</a>
+        before you can use the app<p>
+    {% endif %}
 {% endblock %}
